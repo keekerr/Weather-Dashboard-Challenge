@@ -1,38 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather</title>  
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>      
+    <link rel="stylesheet" href="assets\style.css" />
+  </head>
 
-<head>
-    <link rel="stylesheet" href="assets\style.css">
-</head>
-
-<body>
-    <header>
-        <h1>Weather Dashboard</h1>
-    </header>
-
-    <main>
-        <!-- Search for City Section -->
-        <div></div>
-        <!-- Section for Current Day forcast -->
-        <div></div>
-        <div>
-            <h2>5-Day Forcast</h2>
-            <!-- Day 1 -->
-            <div></div>
-            <!-- Day 2 -->
-            <div></div>
-            <!-- Day 3 -->
-            <div></div>
-            <!-- Day 4 -->
-            <div></div>
-            <!-- Day 5 -->
-            <div></div>
+  <body>
+    <div class="header">
+      Weather Dashboard
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 border-right border-silver" id="cityCol">
+          <br />
+          <h3>Search for a city :</h3>
+          <form class="form-inline mt-2 mt-md-0">
+            <input
+              class="form-control float-left mr-ms-2"
+              type="text"
+              placeholder="Search for a city"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-ms-0" type="submit">
+              Search
+            </button>
+          </form>
+          <div id="cityViewed" class="cityViewed"></div>
         </div>
-
-    </main>
-
-    <footer></footer>
-
+        <div class="col-lg-9 pb-5">
+          <div class="row" id="todayWeather">
+            <div class="col-lg-12">
+              <h2 class="current-city"></h2>
+              <p id="temp"></p>
+              <p id="hum"></p>
+              <p id="windy"></p>
+              <p id="uv"></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h2>5-Day Forecast</h2>
+            </div>
+          </div>
+          <div class="row justify-content-between" id="forecast" >    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- source: https://developers.cloudflare.com/api/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets\script.js"></script>
-</body>
+  </body>
 </html>
