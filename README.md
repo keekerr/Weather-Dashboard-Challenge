@@ -45,6 +45,8 @@ function getUV(lat, lon) {
 
 [Deployed Application](https://keekerr.github.io/Weather-Dashboard-Challenge/)
 
+![Image of Deployed Application](https://github.com/keekerr/Weather-Dashboard-Challenge/blob/main/assets/Weather%20Dashboard%20Sample.PNG?raw=true)
+
 ## Questions
 
 If you have any questions regarding this project, please feel free to contact me at this email: keeley.s.sprouse@gmail.com
